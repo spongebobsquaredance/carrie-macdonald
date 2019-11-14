@@ -96,8 +96,13 @@ footer svg {
   top: 0;
   width: 100%;
 }
+.client-work .text-wrapper {
+  background: white;
+  margin-top: 12px;
+  padding: 12px;
+}
 .client-work h4 {
-  margin: 18px 0 6px;
+  margin-bottom: 6px;
 }
 .client-work .block-one-third a {
   background: #3A1C71;
@@ -132,6 +137,15 @@ footer svg {
   .intro h2 {
     font-size: 24px;
   }
+  .client-work .block-one-third {
+    width: 100%;
+  }
+  .client-work .row-blocks {
+    flex-direction: column;
+  }
+  .client-work .block-one-third+.block-one-third {
+    margin-top: 42px;
+  }
 }
 @media (max-width: 400px) {
   .block-one-third,
@@ -153,12 +167,6 @@ footer svg {
   }
   .about .block-two-thirds {
     margin-top: 24px;
-  }
-  .client-work .row-blocks {
-    flex-direction: column;
-  }
-  .client-work .block-one-third+.block-one-third {
-    margin-top: 42px;
   }
   footer .inner-wrapper {
     flex-direction: column;
