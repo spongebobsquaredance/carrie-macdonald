@@ -67,32 +67,46 @@
             </div>
           </div>
         </div>
-        <p class="url-wrapper">Live site: <a href="https://oasiscenter.org/">https://oasiscenter.org/</a></p>
+        <p class="url-wrapper">Live site: <a href="https://oasiscenter.org/" target="_blank">https://oasiscenter.org/</a></p>
       </div>
     </section>
     <section class="write-up">
       <div class="inner-wrapper">
         <div class="overview">
           <h2>Overview</h2>
-          <h3>The Client's Needs</h3>
-          <p>The client had an older site and needed a newer one. The old site was difficult to update, didn't have necessary functionality.</p>
-          <h3>Process Taken</h3>
-          <p>A designer made templates in a Sketch file. The client sent image assets and information about Oasis Center's programs. The account manager worked with the client to gather functional requirements.</p>
-          <h3>What The Team Created</h3>
-          <p>A custom WordPress site using Advanced Custom Fields. A handful of templates the client could use to create new pages. Conditionally rendered fields and rows that could be repeated then filled in with content from within the WordPress admin area.</p>
-          <p>I trained the client on how to enter content into the site. I also created a step-by-step content entry guide (saved as a PDF) for the client.</p>
+          <h3>The Need</h3>
+          <p>Oasis Center, a Nashville-based non-profit specializing in youth services needed an updated version of their current site to attract donors as well as provide a smooth experience for the people using their services.</p>
+          <h3>The Process</h3>
+          <p>My team’s UX person worked with the client to create a logical site flow based on the client’s content and functional needs. The UX person then created high-fidelity page template designs in Sketch.</p>
+          <p>Once I had the Sketch file and the client’s functional requirements, I broke the layouts into repeatable pieces and components - taking screenshots to add to Jira tickets. I researched technical solutions to meet the functional needs then ran my choices by the account manager to make sure any associated costs (like plugin purchases) were ok with the client.</p>
+          <p>Functionally, the client needed:</p>
+          <ul>
+            <li>All text and image content to be editable without using code</li>
+            <li>To create pages and add content while maintaining the site design</li>
+            <li>To collect newsletter sign-ups and automatically add that information to an existing newsletter contact list</li>
+            <li>To collect donations and process those donations using the client’s existing account with a payment processing service</li>
+          </ul>
+          <p>The client also needed the site’s visual elements and functionality to be modern while still supporting older browsers (down to IE11).</p>
+          <h3>The Result</h3>
+          <p>I chose to use WordPress, since the client mentioned they were already comfortable using it for content-entry, and it met the needs of the project.</p>
+          <p>Keeping in mind that the site would be edited by several people - like seasonal volunteers, I decided to use Advanced Custom Fields to keep a tight control on the final mark-up and styles that would appear on each page.</p>
+          <p>I used the Timber plugin and starter theme as a base for making Twig templates. Using Twig allowed me to conditionally render content - including repeated rows and to take advantage of features like cropping images at a pre-defined size. I was also able to easily set-up default content fallbacks for areas of the layout, so pages could be created quickly but still look polished.</p>
+          <p>I was able to use Gravity Forms plus two Gravity Forms “add on” plugins to create the newsletter sign-up and donation forms. Both the email service and the payment processing service had fairly easy-to-follow instructions for connecting Oasis’s existing accounts with the two new forms. The payment processing service had a “sandbox account” service. This helped me test credit card payments and return both successful and failed processing messages.</p>
+          <p>Once the site was fully tested internally - with placeholder content to fill-out at least one of each page template type. I wrote a “Welcome to Your New Site” how-to guide for the client. I put the content I wrote into Google Slides and was able to save the slides as a PDF booklet - with a linked table of contents.</p>
+          <p>The client reviewed their new site on a staging environment and reviewed the PDF for a few days before coming into the office for an in-person training session. The client entered their content and after a final round of internal testing the site launched a few weeks later.</p>
         </div>
         <div class="tool-list">
           <h2>Tools Used</h2>
           <ul>
             <li>WordPress</li>
             <li>Advanced Custom Fields</li>
-            <li>Authorize.Net</li>
-            <li>Emma</li>
+            <li>Twig</li>
             <li>Gravity Forms</li>
+            <li>Gravity Forms Add-On: Authorize.Net</li>
+            <li>Gravity Forms Add-On: Emma</li>
           </ul>
           <h2>My Role</h2>
-          <p>Development Lead</p>
+          <p>Lead Developer</p>
         </div>
       </div>
     </section>

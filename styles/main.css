@@ -201,18 +201,29 @@ header span+span {
 }
 .write-up h3 {
   font-size: 24px;
-  margin: 24px 0 6px;
+  margin: 32px 0 14px;
 }
 .write-up p {
   line-height: 1.25;
 }
-.tool-list ul {
+.write-up p+p {
+  margin-top: 14px;
+}
+.write-up li {
+  line-height: 1.25;
+}
+.write-up li+li{
+  margin-top: 6px;
+}
+.write-up ul {
   list-style: disc;
-  margin: 24px 0 32px;
   padding-left: 1em;
 }
-.tool-list li+li {
-  margin-top: 6px;
+.overview ul {
+  margin: 14px 0;
+}
+.tool-list ul {
+  margin: 24px 0 32px;
 }
 .tool-list p {
   margin-top: 18px;
