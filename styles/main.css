@@ -145,6 +145,30 @@ header span+span {
   margin-left: 6px;
   padding-left: 4px;
 }
+.project-intro {
+  padding: 54px 0;
+}
+.project-intro h1 {
+  font-size: 42px;
+}
+.project-intro .site-url {
+  font-weight: 700;
+  margin-top: 24px;
+}
+.image-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+.detail-images {
+  align-items: center;
+  display: flex;
+  margin-top: 24px;
+}
+.detail-images div+div {
+  margin-left: 24px;
+}
 
 /* Mobile Styles */
 @media (max-width: 800px) {
