@@ -146,14 +146,17 @@ header span+span {
   padding-left: 4px;
 }
 .project-intro {
-  padding: 54px 0;
+  padding: 60px 0 42px;
 }
 .project-intro h1 {
   font-size: 42px;
 }
-.project-intro .site-url {
+.project-intro .url-wrapper {
   font-weight: 700;
   margin-top: 24px;
+}
+.url-wrapper a {
+  color: black;
 }
 .image-block {
   align-items: center;
@@ -168,6 +171,80 @@ header span+span {
 }
 .detail-images div+div {
   margin-left: 24px;
+}
+.write-up,
+.more-projects {
+  padding: 40px 0 32px;
+  position: relative;
+}
+.write-up::before,
+.more-projects::before {
+  background: #3A1C71;
+  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+  content: "";
+  height: 8px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.write-up .inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.write-up .overview {
+  width: 65%;
+}
+.write-up .tool-list {
+  width: 25%;
+}
+.write-up h2,
+.more-projects h2 {
+  font-size: 32px;
+}
+.write-up h3 {
+  font-size: 24px;
+  margin: 24px 0 6px;
+}
+.write-up p {
+  line-height: 1.25;
+}
+.tool-list ul {
+  list-style: disc;
+  margin: 24px 0 32px;
+  padding-left: 1em;
+}
+.tool-list li+li {
+  margin-top: 6px;
+}
+.tool-list p {
+  margin-top: 18px;
+}
+.two-part-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+.project-block {
+  max-width: 46%;
+}
+.project-block a {
+  color: black;
+  text-decoration: none;
+}
+.project-block h3 {
+  font-size: 24px;
+  margin-top: 12px;
+}
+.back-link {
+  color: black;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 42px;
+  text-decoration: none;
+}
+.back-link span {
+  display: inline-block;
+  margin-right: 8px;
 }
 
 /* Mobile Styles */
