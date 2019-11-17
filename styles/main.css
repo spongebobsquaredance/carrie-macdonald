@@ -125,8 +125,6 @@ footer .inner-wrapper {
 footer svg {
   fill: white;
 }
-
-/* Inner-page styles */
 header {
   background: #3A1C71;
   background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
@@ -225,7 +223,7 @@ header span+span {
   margin: 24px 0;
 }
 .project-block {
-  max-width: 46%;
+  width: 46%;
 }
 .project-block a {
   color: black;
@@ -268,6 +266,16 @@ header span+span {
   .client-work .block-one-third+.block-one-third {
     margin-top: 42px;
   }
+  .write-up .inner-wrapper {
+    flex-direction: column;
+  }
+  .write-up .overview,
+  .write-up .tool-list {
+    width: 100%;
+  }
+  .write-up .tool-list {
+    margin-top: 32px;
+  }
 }
 @media (max-width: 400px) {
   .block-one-third,
@@ -297,12 +305,20 @@ header span+span {
   footer .contact-links {
     margin-top: 24px;
   }
-  /* Inner-page styles */
   header span+span {
     border-left: none;
     display: block;
     margin-left: 0;
     margin-top: 6px;
     padding-left: 0;
+  }
+  .two-part-row {
+    flex-direction: column;
+  }
+  .project-block {
+    width: 100%;
+  }
+  .project-block+.project-block {
+    margin-top: 32px;
   }
 }
