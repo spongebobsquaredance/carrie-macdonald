@@ -312,6 +312,13 @@ header span+span {
     margin-top: 6px;
     padding-left: 0;
   }
+  .detail-images {
+    flex-direction: column;
+  }
+  .detail-images div+div {
+    margin-left: 0;
+    margin-top: 24px;
+  }
   .two-part-row {
     flex-direction: column;
   }
