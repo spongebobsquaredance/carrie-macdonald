@@ -96,8 +96,13 @@ footer svg {
   top: 0;
   width: 100%;
 }
+.client-work .text-wrapper {
+  background: white;
+  margin-top: 12px;
+  padding: 12px;
+}
 .client-work h4 {
-  margin: 18px 0 6px;
+  margin-bottom: 6px;
 }
 .client-work .block-one-third a {
   background: #3A1C71;
@@ -120,6 +125,137 @@ footer .inner-wrapper {
 footer svg {
   fill: white;
 }
+header {
+  background: #3A1C71;
+  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+}
+header a {
+  background: white;
+  color: black;
+  display: inline-block;
+  font-weight: 700;
+  margin: 12px 0;
+  padding: 12px;
+  text-decoration: none;
+}
+header span+span {
+  border-left: 2px solid black;
+  margin-left: 6px;
+  padding-left: 4px;
+}
+.project-intro {
+  padding: 60px 0 42px;
+}
+.project-intro h1 {
+  font-size: 42px;
+}
+.project-intro .url-wrapper {
+  font-weight: 700;
+  margin-top: 24px;
+}
+.url-wrapper a {
+  color: black;
+}
+.image-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+.detail-images {
+  align-items: center;
+  display: flex;
+  margin-top: 24px;
+}
+.detail-images div+div {
+  margin-left: 24px;
+}
+.write-up,
+.more-projects {
+  padding: 40px 0 32px;
+  position: relative;
+}
+.write-up::before,
+.more-projects::before {
+  background: #3A1C71;
+  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+  content: "";
+  height: 8px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.write-up .inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.write-up .overview {
+  width: 65%;
+}
+.write-up .tool-list {
+  width: 25%;
+}
+.write-up h2,
+.more-projects h2 {
+  font-size: 32px;
+}
+.write-up h3 {
+  font-size: 24px;
+  margin: 32px 0 14px;
+}
+.write-up p {
+  line-height: 1.25;
+}
+.write-up p+p {
+  margin-top: 14px;
+}
+.write-up li {
+  line-height: 1.25;
+}
+.write-up li+li{
+  margin-top: 6px;
+}
+.write-up ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+.overview ul {
+  margin: 14px 0;
+}
+.tool-list ul {
+  margin: 24px 0 32px;
+}
+.tool-list p {
+  margin-top: 18px;
+}
+.two-part-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+.project-block {
+  width: 46%;
+}
+.project-block a {
+  color: black;
+  text-decoration: none;
+}
+.project-block h3 {
+  font-size: 24px;
+  margin-top: 12px;
+}
+.back-link {
+  color: black;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 42px;
+  text-decoration: none;
+}
+.back-link span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
 /* Mobile Styles */
 @media (max-width: 800px) {
   .intro .content-wrapper {
@@ -131,6 +267,25 @@ footer svg {
   }
   .intro h2 {
     font-size: 24px;
+  }
+  .client-work .block-one-third {
+    width: 100%;
+  }
+  .client-work .row-blocks {
+    flex-direction: column;
+  }
+  .client-work .block-one-third+.block-one-third {
+    margin-top: 42px;
+  }
+  .write-up .inner-wrapper {
+    flex-direction: column;
+  }
+  .write-up .overview,
+  .write-up .tool-list {
+    width: 100%;
+  }
+  .write-up .tool-list {
+    margin-top: 32px;
   }
 }
 @media (max-width: 400px) {
@@ -154,17 +309,34 @@ footer svg {
   .about .block-two-thirds {
     margin-top: 24px;
   }
-  .client-work .row-blocks {
-    flex-direction: column;
-  }
-  .client-work .block-one-third+.block-one-third {
-    margin-top: 42px;
-  }
   footer .inner-wrapper {
     flex-direction: column;
     padding: 24px 0;
   }
   footer .contact-links {
     margin-top: 24px;
+  }
+  header span+span {
+    border-left: none;
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    padding-left: 0;
+  }
+  .detail-images {
+    flex-direction: column;
+  }
+  .detail-images div+div {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .two-part-row {
+    flex-direction: column;
+  }
+  .project-block {
+    width: 100%;
+  }
+  .project-block+.project-block {
+    margin-top: 32px;
   }
 }
